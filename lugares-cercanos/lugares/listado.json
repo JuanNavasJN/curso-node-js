@@ -1,0 +1,27 @@
+[
+    {
+        "lat":  10.508586,
+        "lng":  -66.873136,
+        "dir": "La Florida"
+    },
+    {
+        "lat": 10.497150, 
+        "lng": -66.844254,
+        "dir": "Torre HP"
+    },
+    {
+        "lat": 10.484364,
+        "lng": -66.861120,
+        "dir": "Las Mercedes"
+    },
+    {
+        "lat": 10.476663, 
+        "lng": -66.875969,
+        "dir": "Valle Arriba"
+    },
+    {
+        "lat": 10.481558, 
+        "lng": -66.897620,
+        "dir": "Los Simbolos"
+    }
+]

@@ -1,3 +1,5 @@
+//Para ejecutar: node app -d "lugar"
+
 const lugar = require('./lugar/lugar');
 const clima = require('./clima/clima');
 
