@@ -29,7 +29,7 @@ let getCoor = async(direccion) => {
     try {
         let coors = await lugar.getLugarLatLng(direccion);
 
-        return `Coordenadas de: ${ coors.direccion }, lat: ${ coors.lat }, lng: ${ coors.lng }`;
+        return coors;
 
     } catch (error) {
         return `No se pudo determinar las coordenadas de ${ direccion }`;
@@ -70,7 +70,9 @@ switch (comando) {
     case 'buscar':
         //console.log(argv.lugar);
         getCoor(argv.lugar)
-             .then(mensaje => console.log(mensaje))
+             .then(coors => lugares.generateOrigins(coors))
+             .then(origins => (origins + lugares.destinations()))
+             .then( link => console.log(link) )
              .catch(e => console.log(e));
         break;
 
