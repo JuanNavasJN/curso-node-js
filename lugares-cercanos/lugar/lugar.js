@@ -3,6 +3,7 @@ const axios = require('axios');
 const getLugarLatLng = async(direccion) => {
 
     let encodeUrl = encodeURI(direccion);
+    //console.log(encodeUrl)
 
     let resp = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${ encodeUrl }&key=AIzaSyAf2v1f4UFILM-kPEc35LmSrHXnUsYIIWo`);
 

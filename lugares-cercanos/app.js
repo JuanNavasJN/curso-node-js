@@ -72,7 +72,9 @@ switch (comando) {
         getCoor(argv.lugar)
              .then(coors => lugares.generateOrigins(coors))
              .then(origins => (origins + lugares.destinations()))
-             .then( link => console.log(link) )
+             .then(address => lugares.consultar(address) )
+             .then(consulta => lugares.mensaje(consulta))
+             .then(mensaje => console.log(mensaje))
              .catch(e => console.log(e));
         break;
 
